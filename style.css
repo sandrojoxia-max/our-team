@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: whitesmoke;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: dimgray;
+  padding: 60px 20px;
+}
+
+.team-section {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.team-section .section-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: dimgray;
+  margin-bottom: 32px;
+}
+
+.team-section .team-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-rows: repeat(2, auto);
+  gap: 40px 24px;
+}
+
+.team-card {
+  text-decoration: none;
+  display: block;
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 14px;
+  width: 100%;
+  transition: border-color 0.2s ease;
+}
+
+.team-card .image-box {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background-color: darkgray;
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+
+.team-card .image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.team-card .member-info .member-name {
+  font-size: 14px;
+  font-weight: 700;
+  color: dimgray;
+  margin-bottom: 4px;
+  transition: color 0.2s ease;
+}
+
+.team-card .member-info .member-role {
+  font-size: 12px;
+  font-weight: 400;
+  color: slategray;
+}
+
+.team-card:hover {
+  border-bottom-color: deepskyblue;
+}
+
+.team-card:hover .image-box img {
+  transform: scale(1.03);
+}
+
+.team-card:hover .member-info .member-name {
+  color: deepskyblue;
+}
+
+.profile-page {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.profile-page .back-link {
+  display: inline-block;
+  text-decoration: none;
+  color: deepskyblue;
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+
+.profile-page .back-link:hover {
+  text-decoration: underline;
+}
+
+.profile-page .profile-card {
+  background-color: white;
+  border-bottom: 2px solid lightgray;
+  padding: 32px;
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+.profile-page .profile-card img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  background-color: darkgray;
+}
+
+.profile-page .profile-card .profile-details h1 {
+  font-size: 26px;
+  color: dimgray;
+  margin-bottom: 6px;
+}
+
+.profile-page .profile-card .profile-details .role {
+  font-size: 15px;
+  color: deepskyblue;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.profile-page .profile-card .profile-details .bio {
+  font-size: 14px;
+  line-height: 1.6;
+  color: slategray;
+}
